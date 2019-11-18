@@ -2,6 +2,8 @@
 ## Requirement
 ### Android Studio
 
+Add follow lines to and ~/.zshrc
+
 export ANDROID_HOME=$HOME/Android/Sdk
 
 export PATH=$PATH:$ANDROID_HOME/tools
