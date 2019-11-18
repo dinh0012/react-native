@@ -2,7 +2,7 @@
 ## Requirement
 ### Android Studio
 
-Add follow lines to and ~/.zshrc
+#### Add follow lines to and ~/.zshrc
 
 export ANDROID_HOME=$HOME/Android/Sdk
 
@@ -12,11 +12,14 @@ export PATH=$PATH:$ANDROID_HOME/tools/bin
 
 export PATH=$PATH:$ANDROID_HOME/platform-tools
 
-#### Config khi bật máy ảo bằng terminal dùng alias nhanh hơn là việc gõ đường dẫn :v
+// Config khi bật máy ảo bằng terminal dùng alias nhanh hơn là việc gõ đường dẫn :v
 
 function emulator { ( cd "$(dirname "$(whence -p emulator)")" && ./emulator "$@"; ) }
 
 alias emu="$ANDROID_HOME/tools/emulator"
+
+source ~/.zshrc
+
 
 ### Nodejs
 
