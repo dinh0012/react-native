@@ -1,8 +1,22 @@
 # react-native
 ## Requirement
-Android Studio
+### Android Studio
 
-Nodels
+export ANDROID_HOME=$HOME/Android/Sdk
+
+export PATH=$PATH:$ANDROID_HOME/tools
+
+export PATH=$PATH:$ANDROID_HOME/tools/bin
+
+export PATH=$PATH:$ANDROID_HOME/platform-tools
+
+#### Config khi bật máy ảo bằng terminal dùng alias nhanh hơn là việc gõ đường dẫn :v
+
+function emulator { ( cd "$(dirname "$(whence -p emulator)")" && ./emulator "$@"; ) }
+
+alias emu="$ANDROID_HOME/tools/emulator"
+
+### Nodejs
 
 ## Install watchman
 git clone https://github.com/facebook/watchman.git
