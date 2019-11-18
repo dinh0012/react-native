@@ -25,3 +25,9 @@ npm install -g react-native-cli
 
 ## Creat new application 
 react-native init myFirstAppNative
+
+cd myFirstAppNative
+
+npm start
+
+react-native run-android
